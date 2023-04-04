@@ -2,6 +2,9 @@
 layout: default
 custom_css: article
 ---
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=509730162430734&autoLogAppEvents=1" nonce="pwMsegIz"></script>
+
 <article id="article-container">
     <h1 id="article-title">{{ page.title }}</h1>
     <time id="article-date">
@@ -12,3 +15,9 @@ custom_css: article
     </section>
     <hr />
 </article>
+
+<div class="comments-container">
+    <h2>What do you think?</h2>
+
+    <div class="fb-comments" data-href="http://emmanuelorozco.com/blog/{{ page.slug | slugify}}" data-width="" data-numposts="5"></div>
+</div>
