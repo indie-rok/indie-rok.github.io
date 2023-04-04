@@ -1,6 +1,7 @@
-- name: Home
+- name: 👀 About
   link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
+- name: 📚 Blog
+  link: /blog
+- name: 🗂️ My CV
+  link: http://cv.emmanuelorozco.com
+  target_blank: true
