@@ -1,0 +1,23 @@
+---
+---
+
+@import 'base';
+
+@media only screen and (max-width: 769px) {
+    body > #top-container{
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    body > #top-container > nav > small{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        font-size: medium;
+    }
+
+    body > #main-container {
+        margin: 30px auto auto;
+    }
+}
