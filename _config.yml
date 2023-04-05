@@ -3,3 +3,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Emmanuel Orozco | Software Engineer | Musician" # the name of your site, e.g. ACME Corp.
 
 permalink: /:slugified_categories/:title
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true

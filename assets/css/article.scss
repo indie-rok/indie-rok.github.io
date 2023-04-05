@@ -295,9 +295,31 @@
 }
 
 .comments-container{
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   margin-top: 30px;
-  justify-content: center;
-  align-items: center;
+}
+
+#disqus_thread {
+  position: relative;
+}
+#disqus_thread:before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 80%;
+  position: relative;
+  bottom: -72px;
+  background: white; //replace with your background colour
+}
+
+#disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+
+.reactions__container{
+  display: none;
 }
