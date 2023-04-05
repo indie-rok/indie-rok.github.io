@@ -12,10 +12,16 @@
     align-items: center; 
     flex-direction: column; 
     justify-content: space-around;
+
+    & a{
+        color: $blue;
+        text-decoration: underline;
+    }
 }
 
 .home_container > h1, .home_container > h2{
-    padding: 20px;
+    padding: 25px;
+    padding-top: 35px;
 }
 
 .home_container > p{
