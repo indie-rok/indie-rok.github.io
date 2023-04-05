@@ -1,0 +1,86 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;
+  font-feature-settings: normal;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  padding: 20px 30px 20px 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-container {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+#top-container {
+  position: fixed;
+  padding-bottom: 5px;
+  z-index: 999;
+}
+
+#top-container h1 {
+  font-size: 24px;
+  display: inline;
+  font-weight: 700;
+}
+
+#top-container small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#top-container .logo-link span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#top-container .logo-link:hover,
+#top-container .logo-link:focus {
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black;
+}
+
+#top-container .info-link:hover,
+#top-container .info-link:focus {
+  color: white;
+  background-color: black;
+}
+
+@media only screen and (max-width: 769px) {
+  body > #top-container {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+  body > #top-container > nav > small {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: medium;
+  }
+  body > #main-container {
+    margin: 30px auto auto;
+  }
+  #disqus_thread {
+    overflow: hidden;
+  }
+  #disqus_thread iframe {
+    margin-bottom: -80px !important;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */
